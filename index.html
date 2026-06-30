@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meu Blog</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="container header-content">
+      <h1 class="logo">Meu Blog</h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#">Início</a></li>
+          <li><a href="#">Artigos</a></li>
+          <li><a href="#">Sobre</a></li>
+          <li><a href="#">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container hero-content">
+      <span class="hero-tag">Bem-vindo</span>
+      <h2 class="hero-title">Ideias, histórias e aprendizados em um só lugar</h2>
+      <p class="hero-subtitle">Um espaço para escrever sobre o que importa, sem amarras de tema.</p>
+    </div>
+  </section>
+
+  <main class="container main-layout">
+
+    <section class="posts">
+
+      <article class="post">
+        <img src="https://placehold.co/800x450/eef1f6/333333?text=Artigo+1" alt="Imagem do post" class="post-img">
+        <div class="post-content">
+          <span class="post-category">Reflexões</span>
+          <span class="post-date">29 de Junho, 2026</span>
+          <h2 class="post-title">Título do Primeiro Artigo</h2>
+          <p class="post-excerpt">
+            Este é um resumo breve do artigo, dando ao leitor uma ideia clara
+            do que ele vai encontrar caso decida continuar a leitura completa.
+          </p>
+          <a href="#" class="read-more">Ler artigo completo →</a>
+        </div>
+      </article>
+
+      <article class="post">
+        <img src="https://placehold.co/800x450/eef1f6/333333?text=Artigo+2" alt="Imagem do post" class="post-img">
+        <div class="post-content">
+          <span class="post-category">Curiosidades</span>
+          <span class="post-date">25 de Junho, 2026</span>
+          <h2 class="post-title">Título do Segundo Artigo</h2>
+          <p class="post-excerpt">
+            Outro resumo interessante sobre o conteúdo, despertando a curiosidade
+            do leitor para que ele clique e continue acompanhando o texto.
+          </p>
+          <a href="#" class="read-more">Ler artigo completo →</a>
+        </div>
+      </article>
+
+      <article class="post">
+        <img src="https://placehold.co/800x450/eef1f6/333333?text=Artigo+3" alt="Imagem do post" class="post-img">
+        <div class="post-content">
+          <span class="post-category">Dicas</span>
+          <span class="post-date">20 de Junho, 2026</span>
+          <h2 class="post-title">Título do Terceiro Artigo</h2>
+          <p class="post-excerpt">
+            Mais um exemplo de resumo, mostrando como os cartões de post se
+            organizam de forma consistente ao longo de toda a página.
+          </p>
+          <a href="#" class="read-more">Ler artigo completo →</a>
+        </div>
+      </article>
+
+    </section>
+
+    <aside class="sidebar">
+      <div class="widget">
+        <h3>Sobre o Blog</h3>
+        <p>Um espaço para compartilhar ideias, histórias e aprendizados sobre os mais variados assuntos.</p>
+      </div>
+      <div class="widget">
+        <h3>Categorias</h3>
+        <ul>
+          <li><a href="#">Reflexões</a></li>
+          <li><a href="#">Curiosidades</a></li>
+          <li><a href="#">Dicas</a></li>
+          <li><a href="#">Estilo de Vida</a></li>
+        </ul>
+      </div>
+      <div class="widget newsletter">
+        <h3>Receba novidades</h3>
+        <p>Cadastre seu e-mail e receba os novos artigos em primeira mão.</p>
+        <form class="newsletter-form" onsubmit="event.preventDefault()">
+          <input type="email" placeholder="seu@email.com" required>
+          <button type="submit">Assinar</button>
+        </form>
+      </div>
+    </aside>
+
+  </main>
+
+  <section class="curiosities-section container">
+    <h2 class="section-title">💡 Curiosidades</h2>
+    <p class="section-subtitle">Tem alguma curiosidade interessante? Adicione abaixo!</p>
+
+    <div class="curiosity-form">
+      <input type="text" id="curiosity-input" placeholder="Digite uma curiosidade..." maxlength="200">
+      <button id="curiosity-btn">Adicionar</button>
+    </div>
+
+    <ul class="curiosity-list" id="curiosity-list">
+      <li class="curiosity-item">
+        <span class="curiosity-icon">📚</span>
+        <p>O primeiro blog da internet surgiu em 1994, criado por Justin Hall, um estudante universitário.</p>
+      </li>
+      <li class="curiosity-item">
+        <span class="curiosity-icon">✍️</span>
+        <p>A palavra "blog" é a abreviação de "weblog", termo criado em 1997 por Jorn Barger.</p>
+      </li>
+      <li class="curiosity-item">
+        <span class="curiosity-icon">🌍</span>
+        <p>Existem mais de 600 milhões de blogs ativos espalhados pelo mundo atualmente.</p>
+      </li>
+    </ul>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2026 Meu Blog. Todos os direitos reservados.</p>
+  </footer>
+
+  <script>
+    const icons = ['📚', '✍️', '🌍', '💡', '🔎', '🎯', '🧠', '✨'];
+    const input = document.getElementById('curiosity-input');
+    const btn = document.getElementById('curiosity-btn');
+    const list = document.getElementById('curiosity-list');
+
+    function addCuriosity() {
+      const text = input.value.trim();
+      if (text === '') {
+        input.focus();
+        input.classList.add('shake');
+        setTimeout(() => input.classList.remove('shake'), 400);
+        return;
+      }
+
+      const li = document.createElement('li');
+      li.className = 'curiosity-item new-item';
+
+      const icon = document.createElement('span');
+      icon.className = 'curiosity-icon';
+      icon.textContent = icons[Math.floor(Math.random() * icons.length)];
+
+      const p = document.createElement('p');
+      p.textContent = text;
+
+      const removeBtn = document.createElement('button');
+      removeBtn.className = 'remove-btn';
+      removeBtn.textContent = '✕';
+      removeBtn.title = 'Remover curiosidade';
+      removeBtn.onclick = () => li.remove();
+
+      li.appendChild(icon);
+      li.appendChild(p);
+      li.appendChild(removeBtn);
+      list.prepend(li);
+
+      input.value = '';
+      input.focus();
+    }
+
+    btn.addEventListener('click', addCuriosity);
+    input.addEventListener('keypress', (e) => {
+      if (e.key === 'Enter') addCuriosity();
+    });
+  </script>
+
+</body>
+</html>
